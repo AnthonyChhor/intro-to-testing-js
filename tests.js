@@ -57,3 +57,44 @@ describe('isEven', function() {
     });
 })
 
+describe('isVowel', function() {
+    it("should return a boolean value no matter what is passed", function() {
+        expect(isVowel()).toBe(false);
+    });
+    it("should return 'true' when passed 'a'", function() {
+        expect(isVowel('a')).toBe(true);
+    });
+    it("should return 'true' when passed 'A'", function() {
+        expect(isVowel('A')).toBe(true);
+    });
+    it("should return 'false' when passed 'y'", function() {
+        expect(isVowel('y')).toBe(false);
+    });
+    it("should return 'false' when passed 4", function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it("should return 'false' when passed 'banana'", function() {
+        expect(isVowel('banana')).toBe(false);
+    });
+
+
+})
+
+describe( 'add', function() {
+    it("should be a defined function", function() {
+        expect(typeof add).toBe('function');
+    });
+    it("should return 5 when 2 and 3 are added", function() {
+        expect(add(2, 3)).toBe(5);
+    });
+    it("should return -12 when -3 and -9 are added", function () {
+        expect(add(-3, -9)).toBe(-12);
+    });
+    it("should return NaN when 'banana' and 'split' are added", function() {
+        expect(add('banana', 'split')).toBeNaN();
+    })
+    it("should return NaN when 'add()' is return", function () {
+        expect(add()).toBeNaN();
+    });
+})
+

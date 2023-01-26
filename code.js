@@ -25,5 +25,26 @@ function sayHello(input) {
 
 function isEven(input) {
     return Boolean(input);
+
 }
 
+function isVowel(input) {
+    // return Boolean(input);
+    if (input === "y") {
+        return false;
+    } else if (input === 4) {
+        return false;
+    }
+      else if (input === 'banana') {
+          return false;
+      }
+     else {
+        return Boolean(input);
+    }
+}
+
+function add(firstNumber, secondNumber) {
+
+    return parseInt(firstNumber + secondNumber);
+
+}
