@@ -52,5 +52,8 @@ describe('isEven', function() {
     it("should return 'true' when 5 is passed", function() {
         expect(isEven(5)).toBe(true);
     });
+    it("should return 'true' when '5' is passed", function() {
+        expect(isEven("5")).toBe(true);
+    });
 })
 
