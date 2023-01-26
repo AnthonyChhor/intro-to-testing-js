@@ -12,6 +12,7 @@ describe('helloWorld', function() {
     it("should never return 'undefined' when called", function() {
       expect(helloWorld()).not.toBe(undefined);
     });
+
 });
 
 describe('sayHello', function() {
@@ -32,6 +33,12 @@ describe('sayHello', function() {
     });
     it("should return 'Hello, Pat!' when executed", function() {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
+    });
+    it("should return 'Hello, World!' when true", function() {
+        expect(sayHello(true)).toBe("Hello, World!");
+    });
+    it("should return 'Hello, World!' when false", function() {
+        expect(sayHello(false)).toBe("Hello, World!");
     });
 });
 
