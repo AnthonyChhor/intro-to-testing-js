@@ -22,3 +22,8 @@ function sayHello(input) {
                 return "Hello, " + input + "!";
     }
 }
+
+function isEven(input) {
+    return Boolean(input);
+}
+

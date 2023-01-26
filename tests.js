@@ -42,3 +42,15 @@ describe('sayHello', function() {
     });
 });
 
+describe('isEven', function() {
+    it("should be a defined function", function() {
+        expect(typeof isEven).toBe("function");
+    });
+    it("should return a boolean value no matter what is passed", function() {
+        expect(isEven()).toBe(false);
+    })
+    it("should return 'true' when 5 is passed", function() {
+        expect(isEven(5)).toBe(true);
+    });
+})
+
